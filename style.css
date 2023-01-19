@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  background-color: #1e1a1f;
+  color: #fff;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#game {
+  position: relative;
+  border: 1px solid #b465da;
+  width: 300px;
+  height: 580px;
+  max-width: 300px;
+  max-height: 580px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#topo {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 100;
+}
+#score {
+  height: 15px;
+  width: auto;
+  font-size: 12px;
+  border-radius: 50px;
+  background-color: #2b252d;
+  padding: 5px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+#ball {
+  width: 15px;
+  height: 15px;
+  background-color: #b465da;
+  border-radius: 50%;
+  position: absolute;
+  left: 142.5px;
+  top: 282.5px;
+  z-index: 2;
+}
+
+#player {
+  position: absolute;
+  width: 80px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 42px;
+  top: 530px;
+  left: 110px;
+  z-index: 1;
+}
+
+.blocks {
+  position: absolute;
+  width: 38.82px;
+  height: 9.71px;
+  background-color: #69dbff;
+  top: 91.65px;
+  left: 26px;
+  z-index: 1;
+}
+
+.toque {
+  width: 80px;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  z-index: 3;
+}
+
+#toque-1 {
+  left: 0px;
+}
+#toque-2 {
+  left: 220px;
+}
+
+@keyframes animaBreakBlocks {
+  0% {
+    background-color: #eb4484;
+  }
+  100% {
+    background-color: #69dbff;
+  }
+}
